@@ -1,16 +1,43 @@
-# weather_app
+# Weather App (Flutter + BLoC/Cubit)
 
-A new Flutter project.
+A clean and simple weather application built with Flutter. Users can search for a city to view current weather details. The UI adapts dynamically with gradient colors and condition-specific images.
 
-## Getting Started
+## Features
+- Current weather (temperature, max/min, condition description)
+- City search with instant updates
+- Dynamic theme gradient based on weather 
+- Condition images from `assets/images`
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
+- Flutter (Material)
+- flutter_bloc (Cubit)
+- http
+- WeatherAPI.com (weather data API)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requirements
+- Flutter SDK
+- Dart SDK (bundled with Flutter)
+- Editor (Android Studio / VS Code)
+- WeatherAPI.com API key
+
+## Setup
+1) Install dependencies:
+```bash
+flutter pub get
+```
+
+2) Run the app:
+```bash
+flutter run
+```
+
+## Usage
+- Launch the app to open `HomePage`.
+- Tap the search icon in the AppBar.
+- Enter a city name and submit (Enter / search icon).
+- Weather data appears with adaptive background and image.
+
+## Notes
+- API endpoint: `http://api.weatherapi.com/v1/forecast.json` (7 days)
